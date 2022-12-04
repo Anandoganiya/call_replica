@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+  --primary: #e9a800;
+  --blue: #244065;
+  --gray: #6a6a6a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: #f7f7f7;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+.nav {
+  background-color: var(--blue);
+  padding: 9px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem 0;
+  width: 70%;
+}
+
+.title span {
+  color: red;
+}
+
+.map_image {
+  width: 50%;
+}
+
+.map_image img {
+  width: 100%;
+}
+
+.paa {
+  font-size: 18px;
+  font-weight: 500;
+  width: 75%;
+  color: var(--gray);
+  font-weight: 500;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.sub-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  align-items: center;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid black;
+}
+
+.question-wrapper h3 {
+  font-weight: 700;
+}
+
+.question {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.btn {
+  width: 100%;
+  display: block;
+  background: var(--primary);
+  font-size: 25px;
+  padding: 15px 0;
+  margin: 10px 0;
+  font-weight: 700;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.about {
+  margin-top: 5rem;
+  font-size: 12px;
+  font-weight: 400;
+  color: #6a6a6a;
+  width: 90%;
+}
+
+.policy {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  width: 90%;
+  color: #6a6a6a;
+}
+
+.policy a {
+  color: #acacac;
+  text-decoration: underline;
+}
+
+@media (max-width:660px) {
+  .title {
+    font-size: 17px;
+  }
+
+  .paa {
+    font-size: 15px;
+  }
+
+  .question-wrapper {
+    width: 90%;
+    font-size: 17px;
+  }
+
+  .question {
+    font-size: 17px;
+  }
+
+  .map_image {
+    width: 90%;
+  }
+
+  .about {
+    width: 90%;
+  }
+}
